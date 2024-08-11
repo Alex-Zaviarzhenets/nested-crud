@@ -5,32 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <form>
-    <input type="text" placeholder="list name">
+  <form class="list-form">
+    <input type="text" placeholder="list name" class="list-input">
     <button>add list</button>
   </form>
-  <ul>
+
+  <ul class="main-list">
     <li>
       <details>
         <summary>list 1</summary>
         <button>rename list</button>
         <button>delete list</button>
         <form>
-          <input type="text" placeholder="item name">
+          <input type="text" placeholder="item name" >
           <button>add item</button>
         </form>
         <ul>
           <li>item 1
-            <button>edit</button>
+            <button class="edit">edit</button>
             <button>delete</button>
           </li>
         </ul>
       </details>
     </li>
-    <li>list 2</li>
   </ul>
 </body>
 
